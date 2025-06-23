@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maleek McKenzie - Advocacy & Activism Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .modal-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Maleek McKenzie</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 transition duration-300">Advocacy Work</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#portfolio" class="block py-2 text-gray-600 hover:text-indigo-600">Advocacy Work</a>
+            <a href="#experience" class="block py-2 text-gray-600 hover:text-indigo-600">Experience</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-indigo-700 text-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Championing Change, Driving Progress</h1>
+                <p class="text-lg md:text-xl text-indigo-200 max-w-3xl mx-auto">A dedicated advocate and activist committed to environmental justice, human rights, and community empowerment.</p>
+                <a href="#portfolio" class="mt-8 inline-block bg-white text-indigo-700 font-bold rounded-full py-3 px-8 uppercase hover:bg-indigo-100 transition duration-300">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-1/2 md:pr-12 flex justify-center">
+                         <img src="PXL_20250402_185645198.MP.jpg" alt="Maleek McKenzie at the Oregon State Capitol" class="rounded-lg shadow-xl mx-auto md:mx-0 w-full max-w-sm object-cover" style="aspect-ratio: 4 / 5;">
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Hello! I'm Maleek McKenzie, a passionate advocate and the Vice Chair of the Conservation Committee for the Sierra Club's Oregon Chapter. My work is driven by the belief that we must be the change we want to see in the world. From my time as an Electrical Engineering student to my current leadership role, I've focused on tangible action. In 2013, my dedication to service was recognized with a campus <a href="https://www.canton.edu/specialty/history/" target="_blank" class="text-indigo-600 underline hover:text-indigo-800 transition duration-300">Humanitarian Award</a>.
+                        </p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                             My experience spans from grassroots organizing on climate action and voter registration drives with NYPIRG to direct advocacy against corporate pollution and engaging with elected officials. I specialize in coalition building, policy analysis, and mobilizing public support for critical causes. I'm always eager to connect with like-minded individuals and organizations to build a better future together.
+                        </p>
+                        <a href="#contact" class="text-indigo-600 font-semibold hover:underline">Let's Connect &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Public Advocacy Work</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">A selection of projects where I've helped shape policy and support the public good.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="image0000001.jpg" alt="Maleek McKenzie with Senator Kirsten Gillibrand" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Civic & Political Engagement</h3>
+                            <p class="text-gray-600 mb-4">Engaging with elected officials and running voter registration drives to influence policy and empower communities.</p>
+                            <button onclick="openModal('modal5')" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="465729099_10225549065262790_6054529435467226877_n.jpg" alt="Students for Climate Action banner" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Environmental & Climate Justice</h3>
+                            <p class="text-gray-600 mb-4">Leading formal opposition to corporate polluters and organizing student action on climate change.</p>
+                            <button onclick="openModal('modal4')" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="464111247_10225188912859205_7192447049813245071_n.jpg" alt="United Nations Security Council chamber" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Human Rights & Global Awareness</h3>
+                            <p class="text-gray-600 mb-4">Engaging with international human rights frameworks and promoting awareness of global human rights abuses.</p>
+                            <button onclick="openModal('modal2')" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="download_20170425_113031.jpg" alt="Tweet about homelessness awareness sleep out" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Hunger & Houselessness</h3>
+                            <p class="text-gray-600 mb-4">Raising awareness about hunger and houselessness and facilitating the collection and distribution of donated food and clothing items.</p>
+                            <button onclick="openModal('modal3')" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="IMG_20170518_141647.jpg" alt="Youth Rebuilding New Orleans truck" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Community Rebuilding & Food Security</h3>
+                            <p class="text-gray-600 mb-4">Hands-on work to combat hunger and help rebuild communities through direct volunteer action and service learning.</p>
+                            <button onclick="openModal('modal1')" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Advocacy in Action</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">A gallery of my work in the community, at the capitol, and with fellow advocates.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="468401034_10164991336482501_2351049547683373032_n.jpg" alt="Group of student activists">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="IMG_20170515_113542.jpg" alt="Working at a community garden in New Orleans">
+                        </div>
+                         <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="464941556_10225368454227627_6413685212187177671_n.jpg" alt="Informational notes about LGBT youth homelessness">
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="FB_IMG_1465278645570.jpg" alt="Large group of diverse volunteers">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="20170516_135903.jpg" alt="Volunteering in New Orleans">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="468836364_10165117007847501_8855474486501853351_n.jpg" alt="Student leaders working together">
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="462324308_10225056193501304_1587053797585628037_n.jpg" alt="What is Respect to you? poster">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="20170517_221753-COLLAGE.jpg" alt="Collage of volunteering at Second Harvest Food Bank">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="463657431_10225146242432471_4341357325945349682_n.jpg" alt="Poster for International Student Activist Organization">
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="20170516_183053-COLLAGE.jpg" alt="Collage of community farm and animal care">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="IMG_20170517_150336.jpg" alt="Volunteers at Second Harvest Food Bank">
+                        </div>
+                         <div>
+                            <img class="h-auto max-w-full rounded-lg shadow-md transform hover:scale-105 transition duration-300" src="IMG_20170518_151641.jpg" alt="Inside a home being rebuilt in New Orleans">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Activism & Volunteer Experience</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">A timeline of my key roles and contributions.</p>
+                </div>
+                <div class="relative max-w-2xl mx-auto">
+                    <div class="border-l-2 border-indigo-200 absolute h-full left-3 top-0"></div>
+                     <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2023 - Present</p>
+                            <h4 class="font-bold text-lg">Vice Chair, Conservation Committee & Community Liaison, Sierra Club Oregon Chapter</h4>
+                            <p class="text-gray-600">Authored letters and gave public testimony against projects like the 'Fix Our Forests Act,' PGE's Harborton Reliability Project, and the proposed Urban Growth Boundary expansion. Acted as a liaison between the Sierra Club and community partners to build coalitions and coordinate action.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2023 - 2024</p>
+                            <h4 class="font-bold text-lg">Intel ERG Member, People for Inclusivity & Equity</h4>
+                            <p class="text-gray-600">Led and participated in discussions surrounding social justice issues such as institutional racism, sexism, and LGBTQ+ rights. Through educating ourselves about societal issues and challenges faced by disadvantaged peoples, we hoped to become more aware of the struggles people face and what we can do about them. Meetings also included how today's inequitable society was born out of the inequities of the past.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2017</p>
+                            <h4 class="font-bold text-lg">Service Learning Trip, New Orleans</h4>
+                            <p class="text-gray-600">Completed a 40-hour service learning trip building a home with Youth Rebuilding New Orleans in a community impacted by Hurricane Katrina, working on a community farm in a food desert, and volunteering at Second Harvest Food Bank.</p>
+                        </div>
+                    </div>
+                        <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2016</p>
+                            <h4 class="font-bold text-lg">Board Member, NYPIRG</h4>
+                            <p class="text-gray-600">Elected to serve on NYPIRG's Board of Directors, responsible for approving any issue that NYPIRG works on, or stance it takes, which must be approved by its student board of directors.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2014 - 2017</p>
+                            <h4 class="font-bold text-lg">Project Leader, NYPIRG (Buffalo State)</h4>
+                            <p class="text-gray-600">Led campus projects for Voter Registration, Higher Education funding, and Climate Action. Organized events, petitions, and educational campaigns to empower students and advocate for policy change.</p>
+                        </div>
+                    </div>
+                     <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2013 - 2014</p>
+                            <h4 class="font-bold text-lg">President & Campaign Lead, Human Trafficking Awareness</h4>
+                            <p class="text-gray-600">Led campus-wide campaigns to raise awareness about human trafficking, educating students and faculty on how to recognize and combat this critical human rights issue.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2013</p>
+                            <h4 class="font-bold text-lg"><a href="https://www.canton.edu/specialty/history/" target="_blank" class="text-indigo-600 underline hover:text-indigo-800 transition duration-300">Recipient, Humanitarian Award</a></h4>
+                            <p class="text-gray-600">Recognized for documentable acts of humanitarianism worthy of campus recognition at SUNY Canton.</p>
+                        </div>
+                    </div>
+                     <div class="mb-8 flex items-center w-full">
+                        <div class="z-10 bg-indigo-600 rounded-full h-6 w-6"></div>
+                        <div class="pl-8 flex-1">
+                            <p class="text-indigo-600 font-semibold">2012 - 2014</p>
+                            <h4 class="font-bold text-lg">Co-Founder & Treasurer, International Student Activist Organization</h4>
+                            <p class="text-gray-600">Co-founded and led a student organization dedicated to promoting global awareness and activism on campus, focusing on international human rights and social justice issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Get In Touch</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">I'm always open to collaborating on projects or discussing new ideas. Feel free to reach out.</p>
+                </div>
+                <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <form action="https://formsubmit.co/maleekmckenzie@protonmail.com" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..." class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required></textarea>
+                        </div>
+                        
+                        <!-- Anti-Spam Measures -->
+                        <input type="hidden" name="_subject" value="New Contact from Advocacy Portfolio!">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="true">
+
+                        <div class="text-center">
+                            <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Maleek McKenzie. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="http://www.linkedin.com/in/maleek-mckenzie-905a0a35" target="_blank" class="text-gray-400 hover:text-white">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals for Portfolio Items -->
+    <div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full transform transition-all duration-300 scale-95">
+            <div class="p-6 md:p-8 overflow-y-auto max-h-screen">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold text-gray-900">Community Rebuilding & Food Security</h3>
+                    <button onclick="closeModal('modal1')" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+                </div>
+                <img src="IMG_20170517_150336.jpg" alt="Volunteering at Second Harvest Food Bank" class="w-full h-auto object-cover rounded-lg my-4">
+                <h4 class="font-bold text-lg mt-6 mb-2">Service Learning in New Orleans</h4>
+                <p class="text-gray-600 mb-4">Unlike traditional volunteering, my week-long service learning trip to New Orleans involved both direct community service and structured reflection. We didn't just provide labor; we engaged in daily discussions about the systemic issues behind the challenges we were witnessing, such as environmental injustice, food deserts, and the long-term impacts of Hurricane Katrina. This approach combines hands-on work with critical thinking, fostering a deeper understanding of how we, as individuals, can contribute to meaningful, long-term solutions beyond just volunteering our time.</p>
+            </div>
+            <div class="bg-gray-100 px-6 py-4 text-right rounded-b-lg">
+                 <button onclick="closeModal('modal1')" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal2" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full transform transition-all duration-300 scale-95">
+             <div class="p-6 md:p-8 overflow-y-auto max-h-screen">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold text-gray-900">Human Rights & Global Awareness</h3>
+                    <button onclick="closeModal('modal2')" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+                </div>
+                <img src="468836364_10165117007847501_8855474486501853351_n.jpg" alt="Students collaborating on documents" class="w-full h-auto object-cover rounded-lg my-4">
+                <h4 class="font-bold text-lg mt-6 mb-2">My Role & Responsibilities</h4>
+                <p class="text-gray-600 mb-4">As a student activist and President of the International Student Activist Organization for 2 years, I worked with other advocates to spread awareness of human trafficking. A key part of this campaign involved organizing and leading a march through the town of Canton, hosting campus events in which we engaged in knowledge sharing and a keynote speech from Gabriel Bol Deng, one of the Lost Boys of Sudan. Through our collective efforts we were able to engage not just the campus community but also residents of the village and students from nearby universities such as; St. Lawrence University, SUNY Potsdam, and Clarkson University.</p>
+            </div>
+            <div class="bg-gray-100 px-6 py-4 text-right rounded-b-lg">
+                 <button onclick="closeModal('modal2')" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full transform transition-all duration-300 scale-95">
+            <div class="p-6 md:p-8 overflow-y-auto max-h-screen">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold text-gray-900">Hunger & Houselessness</h3>
+                    <button onclick="closeModal('modal3')" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+                </div>
+                <img src="download_20170425_113031.jpg" alt="News coverage of the Sleep Out event" class="w-full h-auto object-cover rounded-lg my-4">
+                <h4 class="font-bold text-lg mt-6 mb-2">My Role & Responsibilities</h4>
+                <p class="text-gray-600 mb-4">I participated in and helped lead campus and community-based awareness projects to highlight the crisis of houselessness affecting multiple populations, including youth, veterans, and members of the LGBTQ+ community. This work included organizing a "Sleep Out" event that garnered local news coverage to raise awareness and creating powerful visual displays to share statistics, aiming to foster empathy and drive support for local shelters and support services.</p>
+            </div>
+            <div class="bg-gray-100 px-6 py-4 text-right rounded-b-lg">
+                 <button onclick="closeModal('modal3')" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal4" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full transform transition-all duration-300 scale-95">
+            <div class="p-6 md:p-8 overflow-y-auto max-h-screen">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold text-gray-900">Environmental & Climate Justice</h3>
+                    <button onclick="closeModal('modal4')" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+                </div>
+                <h4 class="font-bold text-lg mt-6 mb-2">Advocacy in Action: Opposing Zenith Energy</h4>
+                <p class="text-gray-600 mb-4">As part of my work with the Sierra Club, I played a role in the campaign urging the Oregon Department of Environmental Quality (DEQ) to deny Zenith Energy's air quality permit. Our formal submission highlighted the public health risks to the local Environmental Justice community and cited Zenith's history of non-compliance and dishonesty.</p>
+                <h4 class="font-bold text-lg mt-6 mb-2">Opposing the 'Fix Our Forests Act' (FOFA)</h4>
+                <p class="text-gray-600 mb-4">I authored and submitted a <a href="https://hillsboronewstimes.com/2025/06/10/opinion-democrats-oppose-federal-fix-our-forests-act/" target="_blank" class="text-indigo-600 underline hover:text-indigo-800 transition duration-300">Letter to the Editor</a> arguing against FOFA, outlining how the bill prioritizes logging interests over community protection, bypasses critical environmental laws like the Endangered Species Act (ESA) and NEPA, and threatens public health by potentially worsening wildfire smoke. As a lifelong asthmatic, I emphasized the personal health risks posed by poor air quality.</p>
+                 <h4 class="font-bold text-lg mt-6 mb-2">Testimony Against PGE's Harborton Project & UGB Expansion</h4>
+                <p class="text-gray-600 mb-4">I have delivered public testimony against Portland General Electric's (PGE) Harborton Reliability Project, raising concerns about its environmental impact. Additionally, I have testified against the proposed Urban Growth Boundary (UGB) expansion, advocating for smarter, denser growth to protect our farmlands and natural areas.</p>
+            </div>
+            <div class="bg-gray-100 px-6 py-4 text-right rounded-b-lg">
+                 <button onclick="closeModal('modal4')" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full transform transition-all duration-300 scale-95">
+            <div class="p-6 md:p-8 overflow-y-auto max-h-screen">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold text-gray-900">Civic & Political Engagement</h3>
+                    <button onclick="closeModal('modal5')" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+                </div>
+                <img src="Screenshot 2025-06-16 182913.jpg" alt="NYPIRG Instagram post featuring Maleek McKenzie" class="w-full h-auto object-cover rounded-lg my-4">
+                <h4 class="font-bold text-lg mt-6 mb-2">My Role & Responsibilities</h4>
+                <p class="text-gray-600 mb-4">A core part of my activism involves ensuring that communities have a voice in our democracy. As a project leader and later as an elected, student Board Member for NYPIRG, I led numerous voter registration drives on campus. This work extended to advocating for affordable higher education and engaging directly with elected officials, like Senator Kirsten Gillibrand, to discuss policy and community needs. As a board member, I was responsible for voting on the official stances and campaigns that the organization would pursue statewide.</p>
+            </div>
+            <div class="bg-gray-100 px-6 py-4 text-right rounded-b-lg">
+                 <button onclick="closeModal('modal5')" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Basic UI/Modal Functionality ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.classList.add('modal-open');
+                setTimeout(() => {
+                   modal.querySelector('div').classList.remove('scale-95');
+                }, 50); 
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.querySelector('div').classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                    document.body.classList.remove('modal-open');
+                }, 300);
+            }
+        }
+        
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.fixed.inset-0').forEach(modal => {
+                    if (!modal.classList.contains('hidden')) {
+                        closeModal(modal.id);
+                    }
+                });
+            }
+        });
+
+        window.addEventListener('click', (event) => {
+            document.querySelectorAll('.fixed.inset-0').forEach(modal => {
+                if (event.target == modal) {
+                    closeModal(modal.id);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
